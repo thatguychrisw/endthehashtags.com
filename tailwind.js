@@ -679,7 +679,7 @@ module.exports = {
     order: ['responsive'],
     outline: ['responsive', 'focus'],
     overflow: ['responsive'],
-    padding: ['responsive'],
+    padding: ['responsive', 'important'],
     placeholderColor: ['responsive', 'focus'],
     placeholderOpacity: ['responsive', 'focus'],
     pointerEvents: ['responsive'],
@@ -723,5 +723,7 @@ module.exports = {
     transitionDelay: ['responsive'],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [
+    require('tailwindcss-important')()
+  ],
 }
