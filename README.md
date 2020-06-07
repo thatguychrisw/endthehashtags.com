@@ -1,4 +1,5 @@
-## End the Hashtags
+## End the Hashtags [![Netlify Status](https://api.netlify.com/api/v1/badges/f0b03e60-8e05-4012-8e88-6be9a2ef39af/deploy-status)](https://app.netlify.com/sites/endthehashtags/deploys)
+
 This is a non-comprehensive timeline of the deaths at the hands of police in the U.S. since Eric Garner's death in July 2014.
 The list came from [NPR](https://www.npr.org/2020/05/29/865261916/a-decade-of-watching-black-people-die).
 
