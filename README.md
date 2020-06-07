@@ -5,7 +5,7 @@ The list came from [NPR](https://www.npr.org/2020/05/29/865261916/a-decade-of-wa
 
 My goal with this project is to bring light to the black victims of police brutality, and keep them in the forefront of our minds.  My hope is that these names will be shared on various social media platforms, and be a reminder to all that we still have a lot of work to do to address systematic racism and issues affecting black people.    
 
-Eric Garner
+>Eric Garner
 John Crawford III
 Michael Brown
 Ezell Ford
