@@ -35,14 +35,19 @@ function App () {
         icon={<FaFistRaised/>}
       >
           <FaFistRaised className="text-4xl float-left pr-4"/>
-          <h3 className="text-2xl font-bold text-yellow-400">What can I do to help?</h3>
-          {action}
+          <h3 className="text-2xl font-bold text-yellow-400">Take Action</h3>
+          <div className="p-2">
+              {action}
+          </div>
       </VerticalTimelineElement>
     )
 
     const victims = victimData.map((victim, key) => {
         const borderColor = key % 2 === 0 ? 'border-blue-500' : 'border-blue-500'
-        const backgroundColor = key % 2 === 0 ? 'bg-blue-500' : 'bg-blue-500'
+        const backgroundColor = key % 2 === 0 ? 'bg-blue-400' : 'bg-blue-400'
+
+        victim.id = victim.fullName.toLowerCase().replace(/\s/,'-')
+        victim.link = `#${victim.id}`
 
         return (
           <React.Fragment key={`fragment-${key}`}>
@@ -59,18 +64,18 @@ function App () {
               }
 
               <VerticalTimelineElement
-                className="border-b-0"
                 key={key}
-                textClassName={`bg-white text-black border-t-4 rounded-none ${borderColor}`}
-                contentArrowStyle={{borderRight: '7px solid rgb(255, 255, 255)'}}
+                textClassName={`bg-blue-500 text-white border-t-4 ${borderColor} shadow-none`}
+                contentArrowStyle={{borderRight: '7px solid rgb(66, 153, 225)'}}
                 date={victim.date}
                 dateClassName="text-white"
                 iconClassName={`${backgroundColor} text-black`}
                 icon={<GiCandleLight/>}
               >
-                  <h3 className="text-4xl">{victim.title}</h3>
-                  <h4 className="text-xl font-bold">{victim.fullName}</h4>
-                  <p>{victim.body}</p>
+                  <h4 id={victim.id} className="text-xl font-bold">
+                      {victim.fullName}
+                  </h4>
+                  <p>{victim.description}</p>
               </VerticalTimelineElement>
           </React.Fragment>
         )
