@@ -1,7 +1,3 @@
-## End the Hashtags
-This is a non-comprehensive timeline of the deaths at the hands of police in the U.S. since Eric Garner's death in July 2014.
-The list came from [NPR](https://www.npr.org/2020/05/29/865261916/a-decade-of-watching-black-people-die).
-
 Eric Garner
 John Crawford III
 Michael Brown
@@ -102,4 +98,3 @@ Eric Reason
 Michael Lorenzo Dean
 Breonna Taylor
 George Floyd
-
