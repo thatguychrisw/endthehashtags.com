@@ -3,6 +3,8 @@
 This is a non-comprehensive timeline of the deaths at the hands of police in the U.S. since Eric Garner's death in July 2014.
 The list came from [NPR](https://www.npr.org/2020/05/29/865261916/a-decade-of-watching-black-people-die).
 
+My goal with this project is to bring light to the black victims of police brutality, and keep them in the forefront of our minds.  My hope is that these names will be shared on various social media platforms, and be a reminder to all that we still have a lot of work to do to address systematic racism and issues affecting black people.    
+
 Eric Garner
 John Crawford III
 Michael Brown
@@ -103,4 +105,7 @@ Eric Reason
 Michael Lorenzo Dean
 Breonna Taylor
 George Floyd
+
+## Contribute
+I need help filling out the summaries of the [victims](https://github.com/thatguychrisw/endthehashtags.com/blob/master/src/data/victims.js) in the timeline.  A 1-2 sentence summary is what I was going for in the `description` field.  The `reference` field is where the user will end up to learn more, the rest of the fields should be self explanatory.
 
