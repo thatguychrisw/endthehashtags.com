@@ -23,7 +23,7 @@ function App () {
               This list was taken from this NPR article.
 
           </p>
-          <h5 className="text-sm pt-4">Last Updated June 6th, 2020</h5>
+          <h5 className="text-sm pt-4">Last Updated June 7th, 2020</h5>
       </VerticalTimelineElement>
     )
 
@@ -82,7 +82,7 @@ function App () {
                   </h4>
                   <div className="px-4" dangerouslySetInnerHTML={{__html: victim.description}}/>
                   <div className="px-4 py-4 md:py-8">
-                      <a className="rounded text-white py-2 px-4 bg-blue-500 font-bold"
+                      <a className="rounded text-white text-sm md:text-base py-2 px-4 bg-blue-500 font-bold border-b border-blue-200"
                          target="_blank"
                          rel="noopener noreferrer"
                          href={victim.reference}>
