@@ -109,3 +109,4 @@ George Floyd
 ## Contribute
 I need help filling out the summaries of the [victims](https://github.com/thatguychrisw/endthehashtags.com/blob/master/src/data/victims.js) in the timeline.  A 1-2 sentence summary is what I was going for in the `description` field.  The `reference` field is where the user will end up to learn more, the rest of the fields should be self explanatory.
 
+A few of the summaries are much longer right now, and need to be shortened.  It was a lot of information to put into the UI and ultimately the references are better suited to provide detail.
