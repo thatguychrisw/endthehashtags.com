@@ -3,7 +3,7 @@ import moment from 'moment'
 export default [
     {
         fullName: 'Eric Garner',
-        description: '<p>NYPD officers approached Garner on July 17 on suspicion of selling single cigarettes from packs without tax stamps. After Garner told the police that he was tired of being harassed and that he was not selling cigarettes, the officers attempted to arrest Garner. When Pantaleo placed his hands on Garner, Garner refused to cooperate and pulled his arms away. Pantaleo then placed his arm around Garner\'s neck and wrestled him to the ground. With multiple officers restraining him, Garner repeated the words "I can\'t breathe" 11 times while lying face down on the sidewalk. After Garner lost consciousness, officers turned him onto his side to ease his breathing. Garner remained lying on the sidewalk for seven minutes while the officers waited for an ambulance to arrive. Garner was pronounced dead at an area hospital approximately one hour later.</p>',
+        description: '<p>Choked and murdered for selling single cigarettes. No charges were filed.</p>',
         reference: 'https://en.wikipedia.org/wiki/Death_of_Eric_Garner',
         date: moment('2014-07-17'),
         state: 'NY'

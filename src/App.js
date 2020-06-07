@@ -4,6 +4,7 @@ import 'react-vertical-timeline-component/style.min.css'
 import './assets/main.css'
 import { GiCandleLight } from 'react-icons/gi'
 import { FaFistRaised } from 'react-icons/fa'
+import states from 'us-state-codes'
 
 import victimData from './data/victims.js'
 
@@ -16,10 +17,10 @@ function App () {
         contentArrowStyle={{borderRight: '0'}}
         icon={<FaFistRaised/>}
       >
-          <h3 className="text-2xl font-bold text-yellow-400">Black Victims of Police Murders</h3>
+          <h1 className="text-3xl font-bold text-yellow-400">Black Victims of Police Brutality</h1>
           <p>
               The following are victims of police brutality starting with <strong>Eric Gardner</strong> in 2014.
-              This list was taken from NPR.
+              This list was taken from this NPR article.
 
           </p>
           <h5 className="text-sm pt-4">Last Updated June 6th, 2020</h5>
@@ -68,13 +69,19 @@ function App () {
                 textClassName={`bg-gray-700 text-white border-t-4 !p-0 ${borderColor} shadow-none`}
                 contentArrowStyle={{borderRight: '7px solid rgb(66, 153, 225)'}}
                 date={victim.date.format("MMMM YYYY")}
-                dateClassName="text-white mx-4 my-2 md:mx-0 md:my-0"
+                dateClassName="text-white !hidden md:!block"
                 iconClassName={`${backgroundColor} text-black`}
                 icon={<GiCandleLight/>}
               >
-                  <h4 id={victim.id} className="bg-blue-500 p-4 text-2xl font-bold shadow-md">{victim.fullName}</h4>
+                  <h4 id={victim.id} className="bg-blue-500 p-4 text-xl md:text-2xl font-bold shadow-md">
+                      <span>{victim.fullName}</span>
+                      <div className="text-sm">
+                          {states.getStateNameByStateCode(victim.state)}
+                          <span className="md:hidden"> - {victim.date.format("MMMM YYYY")}</span>
+                      </div>
+                  </h4>
                   <div className="px-4" dangerouslySetInnerHTML={{__html: victim.description}}/>
-                  <div className="px-4 pt-4 lg:py-8">
+                  <div className="px-4 py-4 md:py-8">
                       <a className="rounded text-white py-2 px-4 bg-blue-500 font-bold"
                          target="_blank"
                          rel="noopener noreferrer"
@@ -89,7 +96,7 @@ function App () {
 
     return (
       <div className="bg-gray-800">
-          <VerticalTimeline className="text-white">
+          <VerticalTimeline animate={false} className="text-white">
               {introduction}
 
               {victims}

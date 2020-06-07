@@ -3,3 +3,13 @@
 @tailwind components;
 
 @tailwind utilities;
+
+p {
+    @apply text-sm !important;
+}
+
+@screen md {
+    p {
+        @apply text-lg !important;
+    }
+}
